@@ -10,14 +10,14 @@ const Slider = () => {
     const isMax = current === 3
 
     return ( 
-        <section className="section-container bg-white">
+        <section className="bg-white section-container md:col-span-3">
             <SlideHolder >
                 <Slide slide={1}/>
                 <Slide slide={2}/>
                 <Slide slide={3}/>
-                <button className="absolute right-12 bottom-0 bg-black w-12 h-12 z-10 centered disabled:cursor-not-allowed" onClick={decrease} disabled={isZero}>
+                <button className="absolute bottom-0 z-10 w-20 h-16 bg-black right-20 centered disabled:cursor-not-allowed" onClick={decrease} disabled={isZero}>
                     <Prev />
-                </button><button className="absolute right-0 bottom-0 bg-black w-12 h-12 z-10 centered disabled:cursor-not-allowed" onClick={increase} disabled={isMax} >
+                </button><button className="absolute bottom-0 right-0 z-10 w-20 h-16 bg-black centered disabled:cursor-not-allowed" onClick={increase} disabled={isMax} >
                     <Next />
                 </button>
             </SlideHolder>

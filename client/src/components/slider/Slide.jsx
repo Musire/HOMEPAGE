@@ -22,7 +22,7 @@ const Slide = ({ slide }) => {
     const isActive = current === slide
 
     return ( 
-        <div className={`h-full w-full absolute top-0 left-0 bg-contain bg-center bg-img ${isActive ? imagesArray[slide] : 'opacity-0'}`} ></div>
+        <div className={`h-full w-full absolute top-0 left-0 bg-cover bg-center bg-img ${isActive ? imagesArray[slide] : 'opacity-0'}`} ></div>
      );
 }
  

@@ -4,14 +4,14 @@ import { AboutSection as Text } from "../../constants/Text"
 
 const About = () => {
     return ( 
-        <section className="section-container bg-white font-normal pb-8">
-            <div className="block-container flex-col">
-                <img src={Dark} alt="dark-about" className="" />
-                <article className="flex flex-col gap-y-4 p-8">
+        <section className="font-normal bg-white section-container md:row-start-2 md:col-span-5">
+            <div className="xs:flex-col md:flex-row block-container xs:w-full">
+                <img src={Dark} alt="dark-about" className="xs:w-full md:w-1/3" />
+                <article className="flex flex-col p-12 gap-y-4">
                     <h4 className="text-lg uppercase tracking-superwide">{Text.title}</h4>
-                    <p className="text-mid/80 text-base">{Text.content}</p>
+                    <p className="text-lg text-mid/80">{Text.content}</p>
                 </article>
-                <img src={Light} alt="light-about" className="" />
+                <img src={Light} alt="light-about" className="xs:w-full md:w-1/3" />
             </div>
         </section>
      );

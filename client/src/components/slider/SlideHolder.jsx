@@ -1,6 +1,6 @@
 const SlideHolder = ({ children }) => {
     return ( 
-        <div className="w-full h-96 bg-blue-200 pt-28 p-8 relative">
+        <div className="relative w-full p-8 bg-blue-200 h-[28rem] pt-28">
             { children }
         </div>
      );

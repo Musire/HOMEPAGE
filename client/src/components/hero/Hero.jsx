@@ -3,11 +3,11 @@ import { ReactComponent as Arrow } from "../../assets/icons/icon-arrow.svg"
 
 const Hero = () => {
     return ( 
-        <section className="section-container bg-white pt-28 pb-10 font-normal">
-            <div className="block-container flex-col space-y-8 no-underline">
+        <section className="font-normal bg-white xs:section-container md:block-container md:col-span-2">
+            <div className="flex-col space-y-8 no-underline block-container xs:w-full xs:p-10">
                 <h1 className="text-5xl text-superGray">{Text.title}</h1>
                 <p className="text-lg text-mid/80">{Text.content}</p>
-                <button className="text-superGray text-left uppercase tracking-superwide text-2xl spaced w-3/5">
+                <button className="w-4/5 text-2xl text-left uppercase text-superGray tracking-superwide spaced">
                     {Text.CTA}
                     <Arrow />
                 </button>
