@@ -1,12 +1,14 @@
 import { SlideProvider } from "../context/SlideContext";
-import { Navbar, Hero, About, Slider } from "./"
+import { Hero, About, Slider } from "./"
 
 const HomePage = () => {
     return ( 
-        <section className="gap-0 block-container md:grid md:grid-cols-5">
+        <section className="bg-white xs:w-full lg:w-4/5 desktop:w-5/6 h-screen md:grid md:grid-cols-[1.5fr_1.1fr] md:grid-rows-[60%_50%]">
             <SlideProvider >
                 <Slider />
-            </SlideProvider>           
+            </SlideProvider>
+            <Hero />
+            <About />          
         </section>
      );
 }

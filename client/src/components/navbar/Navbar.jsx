@@ -13,9 +13,15 @@ const Hero = () => {
     return ( 
         <>
             <nav className="absolute top-0 left-0 z-30 w-full h-20 text-white bg-transparent centered place-items-end">
-                <div className="block-container flex items-center gap-x-[35%]">
-                    <Menu viewBox="0 0 15 15" width="30" className="h-5" onClick={toggleSidebar} />
+                <div className="block-container flex items-center xs:gap-x-[35%] md:gap-x-8 ">
+                    <Menu viewBox="0 0 15 15" width="30" className="h-5 md:hidden" onClick={toggleSidebar} />
                     <Logo viewBox="25 -2 18 18" width="80" className="h-5 font-medium" />
+                    <ul className="xs:hidden md:flex text-base font-normal spaced gap-x-6">
+                        <li className="">home</li>
+                        <li className="">shop</li>
+                        <li className="">about</li>
+                        <li className="">contact</li>
+                    </ul>
                 </div>
             </nav>
             {sidebar && 

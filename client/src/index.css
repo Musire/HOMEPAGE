@@ -84,7 +84,7 @@ html {
   /*Containers*/
 
   .section-container {
-      @apply w-full min-h-[50vh] h-auto centered
+      @apply w-full min-h-[20vh] h-auto centered
   }
 
   .block-container {

@@ -26,7 +26,8 @@ export default {
         montserrat: ['Montserrat', 'sans-serif'],
       },
       letterSpacing: {
-        'superwide': '.3em'
+        'comfy': '.3em',
+        'superwide': '.6em'
       },
       width: {
         '128': '32rem',
