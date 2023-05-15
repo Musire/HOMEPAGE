@@ -17,9 +17,9 @@ const Slider = () => {
                 <Slide slide={2}/>
                 <Slide slide={3}/>
                 <div className="flex absolute bottom-0 xs:right-0 md:-right-40">
-                    <button className="z-10 w-20 h-16 bg-black centered disabled:cursor-not-allowed" onClick={decrease} disabled={isZero}>
+                    <button className="slider-button" onClick={decrease} disabled={isZero}>
                         <Prev />
-                    </button><button className=" z-10 w-20 h-16 bg-black centered disabled:cursor-not-allowed" onClick={increase} disabled={isMax} >
+                    </button><button className="slider-button" onClick={increase} disabled={isMax} >
                         <Next />
                     </button>
                 </div>

@@ -3,13 +3,6 @@
 @tailwind utilities;
 
 :root {
-  --brightred: #F25F3A;
-  --darkred: #242D52;
-  --grayblue: #9095A7;
-  --darkblue: #1D1E25;
-  --royalblue: #242d52;
-  --normalgray: #a9aaaf;
-  --palered: #ffc4b8;
   --lightgray: #FAFAFA;
   --silver: #d9d9d9;
   --mid: #979797;
@@ -37,16 +30,16 @@ html {
   }
   
   ::-webkit-scrollbar-track {
-    background: var(--dark);
+    background: var(--darker);
   }
   
   ::-webkit-scrollbar-thumb {
-    background: var(--palered);
+    background: var(--dark);
     border-radius: 10px;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--brightred);
+    background: var(--silver);
     transition-duration: 2s;
   }
 }
@@ -115,6 +108,16 @@ html {
 
   .bg-img {
     @apply bg-center bg-no-repeat
+  }
+
+  /*Navbar Section*/
+  .navbar-link {
+    @apply h-full hover:border-b-white hover:border-b-2 easy-transition hover:cursor-pointer
+  }
+
+  /*Slider Section*/
+  .slider-button {
+    @apply z-10 w-20 h-16 bg-black centered disabled:cursor-not-allowed hover:bg-dark easy-transition hover:cursor-pointer
   }
 
 }

@@ -17,10 +17,10 @@ const Hero = () => {
                     <Menu viewBox="0 0 15 15" width="30" className="h-5 md:hidden" onClick={toggleSidebar} />
                     <Logo viewBox="25 -2 18 18" width="80" className="h-5 font-medium" />
                     <ul className="xs:hidden md:flex text-base font-normal spaced gap-x-6">
-                        <li className="">home</li>
-                        <li className="">shop</li>
-                        <li className="">about</li>
-                        <li className="">contact</li>
+                        <li className="navbar-link">home</li>
+                        <li className="navbar-link">shop</li>
+                        <li className="navbar-link">about</li>
+                        <li className="navbar-link">contact</li>
                     </ul>
                 </div>
             </nav>
