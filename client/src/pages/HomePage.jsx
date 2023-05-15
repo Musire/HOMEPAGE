@@ -3,13 +3,10 @@ import { Navbar, Hero, About, Slider } from "./"
 
 const HomePage = () => {
     return ( 
-        <section className="section-container xs:flex-col md:grid md:grid-rows-2 md:grid-cols-5 centered">
-            <Navbar />
+        <section className="gap-0 block-container md:grid md:grid-cols-5">
             <SlideProvider >
                 <Slider />
-            </SlideProvider>
-            <Hero />
-            <About />
+            </SlideProvider>           
         </section>
      );
 }

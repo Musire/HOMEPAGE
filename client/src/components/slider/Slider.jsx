@@ -1,5 +1,5 @@
 import { SlideContext } from "../../context/SlideContext";
-import { SlideHolder, Slide } from "./"
+import { SlideHolder, Slide, Navbar } from "./"
 import { ReactComponent as Prev } from "../../assets/icons/icon-angle-left.svg"
 import { ReactComponent as Next } from "../../assets/icons/icon-angle-right.svg"
 import { useContext } from "react";
@@ -10,8 +10,9 @@ const Slider = () => {
     const isMax = current === 3
 
     return ( 
-        <section className="bg-white section-container md:col-span-3">
+        <section className="relative bg-white section-container md:col-start-1 md:col-span-3">
             <SlideHolder >
+                <Navbar />
                 <Slide slide={1}/>
                 <Slide slide={2}/>
                 <Slide slide={3}/>

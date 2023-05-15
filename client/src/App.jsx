@@ -2,8 +2,8 @@ import { HomePage } from "./pages"
 
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold no-underline">
+    <section className="w-screen h-screen text-3xl font-bold no-underline bg-white  centered">
       <HomePage />
-    </h1>
+    </section>
   )
 }
